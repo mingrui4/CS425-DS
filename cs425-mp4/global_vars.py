@@ -1,0 +1,20 @@
+from queue import Queue
+MASTER = '172.22.154.142'
+BOLT_FILTER = "BOLT_FILTER"
+BOLT_AGG = "BOLT_AGG"
+file_name_one = "owo.txt"
+file_name_two = "qaq.txt"
+file_name_three = "demo.txt"
+SPOUT = 'SPOUT'
+Stream_Stop = "######STREAM STOP######"
+Job_Complete = "#####JOB COMPLETE#####"
+membership_list = []
+result_map ={}
+listener_thread_stop = False
+force_all_stop = False
+fault_stop = False
+role_listener_stop = False
+stream_read_stop = False
+job_completed = False
+stream_list = Queue()
+result = False
